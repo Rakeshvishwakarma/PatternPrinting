@@ -2,10 +2,12 @@ class Pattern{
     public static void main(String[] args){
         int row = 1;
         int n = 5;
+        int count = 1;
         while (row <= n){
             int column = 1;
             while (column <= row){
-                System.out.print(row);
+                System.out.print(count + " " );
+                count += 1;
                 column += 1;
             }
             System.out.println(" ");
@@ -16,8 +18,8 @@ class Pattern{
 
 
 // Output:-  
-//     1
-//     22 
-//     333 
-//     4444 
-//     55555
+//    1  
+//    2 3  
+//    4 5 6  
+//    7 8 9 10  
+//    11 12 13 14 15  
