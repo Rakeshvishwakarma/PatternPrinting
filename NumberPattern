@@ -1,24 +1,23 @@
-// Pattern printing 
 class Pattern{
     public static void main(String[] args){
-        int i = 1;
-        int n = 3;
-        int count = 1;
-        while (i <= n){
-            int j = 1;
-            
-            while (j <= n){
-                System.out.print(count);
-                count += 1;
-                j +=1;
-                
+        int row = 1;
+        int n = 5;
+        while (row <= n){
+            int column = 1;
+            while (column <= row){
+                System.out.print(row);
+                column += 1;
             }
-            System.out.println();
-            i += 1;
+            System.out.println(" ");
+            row += 1;
         }
     }
 }
 
-// Output:- 123
-//          456
-//          789
+
+// Output:-  
+//     1
+//     22 
+//     333 
+//     4444 
+//     55555
