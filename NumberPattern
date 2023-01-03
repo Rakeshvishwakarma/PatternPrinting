@@ -6,7 +6,7 @@ class Pattern{
         while (i <= n){
             int j = 1;
             while (j <= n){
-                System.out.print(i);
+                System.out.print(j);
                 j +=1;
                 
             }
@@ -16,6 +16,6 @@ class Pattern{
     }
 }
 
-// Output:- 111
-//          222
-//          333
+// Output:- 123
+//          123
+//          123
