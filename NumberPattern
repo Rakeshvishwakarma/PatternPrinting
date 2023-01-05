@@ -1,13 +1,11 @@
 class Pattern{
-    public static void numPattern(int n){
-        int i=1;
-        
+    public static void charPattern(int n){
+        int i = 1;
         while (i <= n){
-            int j=1;
-            int count = i;
-            while (j <= i ){
-                System.out.print(count);
-                count -= 1;
+            int j = 1;
+            while (j <= n){
+                char a= (char) ('A' + i - 1); // Type casting of values from INT A(65) //value to Charachter A 
+                System.out.print(a);
                 j += 1;
                 System.out.print(" ");
             }
@@ -16,14 +14,16 @@ class Pattern{
         }
     }
     public static void main(String[] args){
-        int n= 4;
-        numPattern(n);
+        int n = 7;
+        charPattern(n);
     }
 }
 
-
-//output: 
-//1
-//2 1
-//3 2 1
-//4 3 2 1
+//output:
+// A A A A A A A  
+// B B B B B B B  
+// C C C C C C C  
+// D D D D D D D  
+// E E E E E E E  
+// F F F F F F F  
+// G G G G G G G 
